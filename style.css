@@ -1,0 +1,221 @@
+/* Global */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body{
+    background: rgb(181, 200, 255);
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 0.9px;
+}
+
+.logo{
+    display: block;
+    margin: 40px auto;
+    width: 78px;
+    height: 43px;
+}
+
+.container{
+    max-width: 780px;
+    height: 400px;
+    margin: 10px auto;
+    border-radius: 15px;
+    box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.15);
+    padding: 30px 45px;
+    background: rgb(250, 248, 246);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.left{
+    
+    width: 43%;
+    /* background: rgb(19, 124, 138); */
+    color: rgb(33, 91, 99);
+    border-radius: 15px;
+
+}
+.right{
+    padding: 10px 20px;
+    border-radius: 15px;
+    width: 45%;
+    background: rgb(17, 82, 90);
+    color: whitesmoke;
+    padding-top: 29px;
+}
+.right h3{
+    margin-bottom: 2px;
+}
+.right h4{
+    margin-top: 0px;
+    font-size: 15px;
+    color: rgba(245, 245, 245, 0.548);
+}
+.heading{
+    margin-top: 30px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+#error-msg{
+    color: rgb(224, 42, 42);
+}
+.output{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+    margin: 0 auto;
+}
+.amount{
+    font-size: 39px;
+    color: turquoise;
+}
+
+.btn{
+    display: block;
+    width: 92%;
+    margin: 0 auto;
+    padding: 14px 0px;
+    border:none;
+    border-radius: 5px;
+    background: turquoise;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 85px;
+}
+.btn:hover{
+    cursor: pointer;
+    background: rgba(64, 224, 208, 0.9);
+}
+
+.input{
+    width: 95%;
+    border:1px solid rgba(181, 200, 255, 0.267) ;
+    padding: 5px 10px;
+    border-radius: 2px;
+    background: rgba(181, 200, 255, 0.267);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.input span{
+    font-size: 20px;
+    margin-right: 5px;
+    font-weight: bold;
+    color: rgb(91, 146, 146);
+    text-align: center;
+}
+.bold{
+    color: rgb(16, 59, 65) !important;
+}
+.input span:focus{
+outline: none;
+initial-value: "";
+}
+.icon{
+    width: 12px;
+    height: 14px;
+    margin: auto 10px;
+}
+
+.grid-container{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40px 40px;
+    gap: 1em;
+}
+.tip{
+    display: inline-block;
+    background: rgb(17, 82, 90);
+    color: rgb(253, 238, 238);
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all .25s ease-out;
+}
+.tip:hover{
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#custom{
+    display: inline-block;
+    background: rgb(17, 82, 90);
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+    background: rgba(181, 200, 255, 0.267);
+    color: teal;
+}
+#custom:focus{
+    outline: none;
+}
+
+.active-perc{
+    background: turquoise;
+    color: rgb(4, 92, 92);
+}
+
+@media screen and (max-width:620px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .logo{
+        display: block;
+        margin: 30px auto;
+        width: 60px;
+        height: 35px;
+    }
+    .container{
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 10px;
+
+    }
+    .left{
+    
+        width: 90%;
+        /* background: rgb(19, 124, 138); */
+        color: rgb(33, 91, 99);
+        border-radius: 15px;
+        height: auto;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .right{
+        padding: 10px 20px;
+        border-radius: 15px;
+        width: 90%;
+        background: rgb(17, 82, 90);
+        color: whitesmoke;
+        height: auto;
+        margin: 10px auto;
+
+        padding-top: 29px;
+    }
+    .left h3{
+        margin: 20px 0;
+    }
+    .heading{
+        font-size:19px;
+    }
+    .right .output{
+        margin: 20px auto;
+        
+    }
+    .btn{
+        margin-bottom: 20px;
+    }
+}

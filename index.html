@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+
+<body>
+  <img src="./images/logo.svg" alt="logo" class="logo">
+  <div class="container">
+    <div class="left">
+      <div class="heading">
+        <span>Bill</span>
+        <span id="berror-msg"></span>
+      </div>
+      <div class="input" id="bill-input">
+        <img src="./images/icon-dollar.svg" alt="" class="icon">
+        
+        <span class="inputs" id="bill" style="display: inline-block;
+             border: solid 1px black;
+             min-width: 50px; 
+             max-width: 200px;
+             border: none;" placeholder="0">0
+        </span>
+      </div>
+
+
+      <h3>Select Tip %</h3>
+      <div class="grid-container">
+        <span class="tip">5%</span>
+        <span class="tip">10%</span>
+        <span class="tip">15%</span>
+        <span class="tip">20%</span>
+        <span class="tip">50%</span>
+        <span id="custom" contenteditable="true">Custom</span>
+      </div>
+      <div class="heading">
+        <span>Number of people</span>
+        <span id="perror-msg"></span>
+      </div>
+
+      <div class="input" id="people-input">
+        <img src="./images/icon-person.svg" alt="" class="icon">
+        <span class="inputs" contenteditable="true" id="people" style="display: inline-block;
+             border: solid 1px black;
+             min-width: 50px; 
+             max-width: 200px;
+             border: none;" placeholder="0">0
+        </span>
+      </div>
+    </div>
+    <div class="right">
+      <div class="output">
+        <div class="text">
+          <h3>Tip Amount</h3>
+          <h4>/ person</h4>
+        </div>
+        <div class="amount" id="tipAmount">
+          $0.00
+        </div>
+      </div>
+
+      <div class="output">
+        <div class="text">
+          <h3>Total</h3>
+          <h4>/ person</h4>
+        </div>
+        <div class="amount" id="total">
+          $0.00
+        </div>
+      </div>
+
+      <button class="btn" id="reset">RESET</button>
+    </div>
+  </div>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Ali Kumail</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
